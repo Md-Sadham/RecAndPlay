@@ -15,7 +15,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     // Button
     @IBOutlet weak var btnPlay: UIButton!
     @IBOutlet weak var btnPause: UIButton!
-    @IBOutlet weak var btnSave: UIButton!
     @IBOutlet weak var btnDiscard: UIButton!
     @IBOutlet weak var btnRecord: UIButton!
     
@@ -447,13 +446,11 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             btnDiscard.backgroundColor = UIColor.red
             btnPlay.backgroundColor = UIColor.red
             btnPause.backgroundColor = UIColor.red
-            btnSave.backgroundColor = UIColor.red
             btnRecord.backgroundColor = hexStringToUIColor(hex: "#0078FF")
             
             btnDiscard.isUserInteractionEnabled = false
             btnPlay.isUserInteractionEnabled = false
             btnPause.isUserInteractionEnabled = false
-            btnSave.isUserInteractionEnabled = false
             btnRecord.isUserInteractionEnabled = true
             
             btnRecord.setTitle("Start", for: .normal)
@@ -464,13 +461,11 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             btnDiscard.backgroundColor = UIColor.red
             btnPlay.backgroundColor = UIColor.red
             btnPause.backgroundColor = hexStringToUIColor(hex: "#0078FF")
-            btnSave.backgroundColor = UIColor.red
             btnRecord.backgroundColor = UIColor.red
             
             btnDiscard.isUserInteractionEnabled = false
             btnPlay.isUserInteractionEnabled = false
             btnPause.isUserInteractionEnabled = true
-            btnSave.isUserInteractionEnabled = false
             btnRecord.isUserInteractionEnabled = false
             
             btnRecord.setTitle("Recording", for: .normal)
@@ -481,13 +476,11 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             btnDiscard.backgroundColor = hexStringToUIColor(hex: "#0078FF")
             btnPlay.backgroundColor = hexStringToUIColor(hex: "#0078FF")
             btnPause.backgroundColor = UIColor.red
-            btnSave.backgroundColor = hexStringToUIColor(hex: "#0078FF")
             btnRecord.backgroundColor = hexStringToUIColor(hex: "#0078FF")
             
             btnDiscard.isUserInteractionEnabled = true
             btnPlay.isUserInteractionEnabled = true
             btnPause.isUserInteractionEnabled = false
-            btnSave.isUserInteractionEnabled = true
             btnRecord.isUserInteractionEnabled = true
             
             btnRecord.setTitle("Resume", for: .normal)
@@ -496,13 +489,11 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
             btnDiscard.backgroundColor = UIColor.red
             btnPlay.backgroundColor = UIColor.red
             btnPause.backgroundColor = hexStringToUIColor(hex: "#0078FF")
-            btnSave.backgroundColor = UIColor.red
             btnRecord.backgroundColor = UIColor.red
             
             btnDiscard.isUserInteractionEnabled = false
             btnPlay.isUserInteractionEnabled = false
             btnPause.isUserInteractionEnabled = true
-            btnSave.isUserInteractionEnabled = false
             btnRecord.isUserInteractionEnabled = false
             
             btnRecord.setTitle("Resume", for: .normal)
